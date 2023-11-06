@@ -7,8 +7,6 @@ ip = "localhost"
 port = 8092
 buffer_size = 8192 #Bytes => 8 KB
 
-
-files_list = []
 def receive_file():
     """This function receive data from the server."""
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as client:
