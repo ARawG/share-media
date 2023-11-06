@@ -19,7 +19,6 @@ def receive_file():
         print(server_files)
         print("please choose a file to download:")
         file_name = input()
-        print("log")
         client.sendall(file_name.encode())
         file_size = int(client.recv(buffer_size).decode())
         requested_file = client.recv(buffer_size)
